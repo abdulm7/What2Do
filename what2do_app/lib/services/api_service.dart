@@ -7,7 +7,7 @@ class ApiService{
   Future<List<String>?> getActivities(occupation, goal) async{
     var client = http.Client();
 
-    var url = 'https://udbmcm3zu0.execute-api.ca-central-1.amazonaws.com/default/whattodo?occupation=$occupation&goal=$goal';
+    var url = 'https://jx2s0ezqj1.execute-api.ca-central-1.amazonaws.com/default/what2do?occupation=$occupation&goal=$goal';
     final uri = Uri.parse(url);
 
     var res = await client.get(uri);

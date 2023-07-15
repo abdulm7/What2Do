@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:http/http.dart';
 import 'package:what2do_app/services/api_service.dart';
 
 void main() {
@@ -134,7 +133,7 @@ void showDialogWithFields() {
       return Center(
         child: AlertDialog(
           title: const Text('Set Your Goal!'),
-          content: Container(
+          content: SizedBox(
             height: 150,
             child: Column(
               children: [ 
